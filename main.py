@@ -5,7 +5,7 @@ class main():
             return float(deposit)
 
         def withDrawal():
-            withDrawal = input('Escolha um valor para sacar até 500 reais: ')
+            withDrawal = input('Escolha um valor para sacar de até 500 reais: ')
             return float(withDrawal)
         
         def choose():
@@ -18,6 +18,7 @@ class main():
             history = []
             register = 800.00
             limitWD = 3
+
             while True:
                 user = choose()
                 if user in ['D', 'DEPOSITO', 'DEPÓSITO']:
@@ -52,9 +53,11 @@ class main():
                         for show in history:
                             print(show)
                         print(f'\nSeu saldo: R$ {register}')
+
                 else:
                     print('Encerrando a operação')
-                    break     
+                    break   
+
         except:
             print('Erro em realizar a operação.')
 
